@@ -46,6 +46,8 @@ Refactor this code, take small steps, run the tests often. See how small and bea
 Clone the repo, checkout the branch `push-challenge`, and create your own branch from it.
 > git clone git@github.com:alpescraft/Parrot-Refactoring-Kata.git
 
+Make sure you have read access to this repository.
+
 > git checkout push-challenge
 
 
@@ -56,6 +58,8 @@ Then create your first commit, to test the workflow. And push it.
 > git commit -am "testing the flow"
 
 > git push -u origin your_branch
+
+Check your score on the dashboard: https://zictmyhave.eu-west-1.awsapprunner.com
 
 ### Acknowledgements
 
