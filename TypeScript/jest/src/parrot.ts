@@ -45,7 +45,7 @@ export class EuropeanParrot extends Parrot {
     }
 
     getSpeed() {
-        return super.getSpeed();
+        return 12;
     }
 }
 
