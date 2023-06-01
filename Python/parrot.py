@@ -51,6 +51,9 @@ class AfricanParrot(Parrot):
         self._number_of_coconuts = number_of_coconuts
         super().__init__(ParrotType.AFRICAN, number_of_coconuts, voltage, nailed)
 
+    def speed(self):
+        return max(0, super()._base_speed() - super()._load_factor() * self._number_of_coconuts)
+
 
 class NorwegianParrot(Parrot):
 
