@@ -1,6 +1,5 @@
 export class Parrot {
-    constructor(
-                public numberOfCoconuts: number) {
+    constructor() {
     }
 
     public getBaseSpeed(): number {
@@ -11,7 +10,7 @@ export class Parrot {
 
 export class EuropeanParrot extends Parrot {
     constructor() {
-        super(0);
+        super();
     }
 
     getSpeed() {
@@ -20,8 +19,8 @@ export class EuropeanParrot extends Parrot {
 }
 
 export class AfricanParrot extends Parrot {
-    constructor( numberOfCoconuts: number) {
-        super(numberOfCoconuts);
+    constructor(public numberOfCoconuts: number) {
+        super();
     }
 
     getSpeed(): number {
@@ -37,7 +36,7 @@ export class NorwegianBlueParrot extends Parrot {
     constructor(
                  public voltage: number,
                  public isNailed: boolean) {
-        super( 0);
+        super();
     }
 
     getSpeed(): number {
