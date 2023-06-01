@@ -14,6 +14,7 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+
     public double getSpeed() {
         switch (type) {
             case EUROPEAN:
