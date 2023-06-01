@@ -4,7 +4,7 @@ public class Parrot {
 
     private ParrotTypeEnum type;
     protected int numberOfCoconuts;
-    private double voltage;
+    protected double voltage;
     private boolean isNailed;
 
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
