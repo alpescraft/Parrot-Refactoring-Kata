@@ -55,4 +55,5 @@ class AfricanParrot(Parrot):
 class NorwegianParrot(Parrot):
 
     def __init__(self, voltage, nailed):
+        self._nailed = nailed
         super().__init__(ParrotType.NORWEGIAN_BLUE, voltage, nailed)
