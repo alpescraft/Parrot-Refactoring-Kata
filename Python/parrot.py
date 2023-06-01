@@ -23,7 +23,7 @@ class Parrot:
 
 class EuropeanParrot(Parrot):
     def __init__(self):
-        super().__init__(ParrotType.EUROPEAN, 0, 0, False)
+        super().__init__(ParrotType.EUROPEAN, 0, 0)
 
     def speed(self):
         return super()._base_speed()
