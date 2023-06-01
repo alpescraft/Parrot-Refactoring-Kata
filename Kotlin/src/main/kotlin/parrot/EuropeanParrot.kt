@@ -1,4 +1,4 @@
 package parrot
 
-class EuropeanParrot(type: ParrotTypeEnum, numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) :
-        Parrot(type, numberOfCoconuts, voltage, isNailed)
+class EuropeanParrot(numberOfCoconuts: Int, voltage: Double, isNailed: Boolean) :
+        Parrot(numberOfCoconuts, voltage, isNailed)
