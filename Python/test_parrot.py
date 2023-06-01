@@ -32,5 +32,5 @@ def test_speedNorwegianBlueParrot_not_nailed():
 
 
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
-    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 0, 4, False)
+    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 0, 4)
     assert parrot.speed() == 24.0
