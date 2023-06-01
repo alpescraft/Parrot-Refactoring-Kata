@@ -6,8 +6,8 @@ import kotlin.math.min
 open class Parrot(
     private val type: ParrotTypeEnum,
     val numberOfCoconuts: Int,
-    private val voltage: Double,
-    private val isNailed: Boolean
+    val voltage: Double,
+    val isNailed: Boolean
 ) {
 
     open val speed: Double
@@ -23,5 +23,5 @@ open class Parrot(
     val baseSpeed: Double
         get() = 12.0
 
-    private fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
+    fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
 }
