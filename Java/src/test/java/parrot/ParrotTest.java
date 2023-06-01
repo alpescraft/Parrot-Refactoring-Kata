@@ -1,10 +1,18 @@
 package parrot;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class ParrotTest {
+
+    @Test
+    public void genericParrot(){
+        GenericParrot parrot = new GenericParrot();
+        Assert.assertNotNull(parrot);
+    }
+
 
     @Test
     public void getSpeedOfEuropeanParrot() {
