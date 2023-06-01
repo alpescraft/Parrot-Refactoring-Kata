@@ -12,7 +12,7 @@ def test_speedOfAfricanParrot_With_One_Coconut():
 
 
 def test_speedOfAfricanParrot_With_Two_Coconuts():
-    parrot = Parrot(ParrotType.AFRICAN, 2, 0, False)
+    parrot = AfricanParrot(ParrotType.AFRICAN, 2, 0, False)
     assert parrot.speed() == 0.0
 
 
