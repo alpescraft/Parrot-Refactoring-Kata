@@ -27,7 +27,7 @@ class Parrot:
 
 class EuropeanParrot(Parrot):
 
-    def __init__(self, voltage, nailed):
+    def __init__(self, nailed):
         super().__init__(ParrotType.EUROPEAN, nailed)
 
     def speed(self):
