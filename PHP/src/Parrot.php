@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Parrot;
 
 use Exception;
+use Parrot\Parrot\EuropeanParrot;
 
 class Parrot
 {
@@ -40,7 +41,7 @@ class Parrot
     {
         switch ($this->type) {
             case ParrotTypeEnum::EUROPEAN:
-                return $this->getBaseSpeed();
+                return (new EuropeanParrot())->getSpeed();
             case ParrotTypeEnum::AFRICAN:
                 return max(0, $this->getBaseSpeed() - $this->getLoadFactor() * $this->numberOfCoconuts);
             case ParrotTypeEnum::NORWEGIAN_BLUE:
