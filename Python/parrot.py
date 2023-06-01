@@ -45,3 +45,11 @@ class Parrot:
 class EuropeanParrot(Parrot):
     def speed(self):
         return self._base_speed()
+
+class AfricanParrot(Parrot):
+    def speed(self):
+        return self.african_speed()
+
+class NorwegianParrot(Parrot):
+    def speed(self):
+        return self.norwegian_speed()
