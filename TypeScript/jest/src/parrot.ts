@@ -6,7 +6,7 @@ export enum ParrotTypes {
 
 export class Parrot {
     constructor(private parrotType: ParrotTypes,
-                private numberOfCoconuts: number,
+                public numberOfCoconuts: number,
                 private voltage: number,
                 private isNailed: boolean) {
     }
@@ -21,11 +21,11 @@ export class Parrot {
         throw new Error("Should be unreachable");
     }
 
-    private getBaseSpeed(): number {
+    public getBaseSpeed(): number {
         return 12;
     }
 
-    private getLoadFactor(): number {
+    public getLoadFactor(): number {
         return 9;
     }
 
@@ -55,7 +55,7 @@ export class AfricanParrot extends Parrot {
     }
 
     getSpeed(): number {
-        return super.getSpeed();
+        return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
     }
 }
 
