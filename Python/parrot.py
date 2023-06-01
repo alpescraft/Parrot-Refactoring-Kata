@@ -56,4 +56,5 @@ class NorwegianParrot(Parrot):
 
     def __init__(self, voltage, nailed):
         self._nailed = nailed
+        self._voltage = voltage
         super().__init__(ParrotType.NORWEGIAN_BLUE, voltage, nailed)
