@@ -9,7 +9,7 @@ class ParrotType(Enum):  # If it is not available, just remove it.
 
 class Parrot:
 
-    def __init__(self, type_of_parrot, voltage, nailed):
+    def __init__(self, type_of_parrot, nailed):
         self._type = type_of_parrot
 
     def speed(self):
@@ -28,7 +28,7 @@ class Parrot:
 class EuropeanParrot(Parrot):
 
     def __init__(self, voltage, nailed):
-        super().__init__(ParrotType.EUROPEAN, voltage, nailed)
+        super().__init__(ParrotType.EUROPEAN, nailed)
 
     def speed(self):
         return super()._base_speed()
@@ -38,7 +38,7 @@ class AfricanParrot(Parrot):
 
     def __init__(self, number_of_coconuts, voltage, nailed):
         self._number_of_coconuts = number_of_coconuts
-        super().__init__(ParrotType.AFRICAN, voltage, nailed)
+        super().__init__(ParrotType.AFRICAN, nailed)
 
     def speed(self):
         return max(0, super()._base_speed() - super()._load_factor() * self._number_of_coconuts)
@@ -49,7 +49,7 @@ class NorwegianParrot(Parrot):
     def __init__(self, voltage, nailed):
         self._nailed = nailed
         self._voltage = voltage
-        super().__init__(ParrotType.NORWEGIAN_BLUE, voltage, nailed)
+        super().__init__(ParrotType.NORWEGIAN_BLUE, nailed)
 
     def speed(self):
         if self._nailed:
