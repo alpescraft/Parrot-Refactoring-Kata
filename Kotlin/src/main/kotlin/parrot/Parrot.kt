@@ -10,7 +10,7 @@ open class Parrot(
     private val isNailed: Boolean
 ) {
 
-    val speed: Double
+    open val speed: Double
         get() = when (type) {
             ParrotTypeEnum.EUROPEAN -> baseSpeed
             ParrotTypeEnum.AFRICAN -> max(0.0, baseSpeed - loadFactor * numberOfCoconuts)
@@ -20,7 +20,7 @@ open class Parrot(
     private val loadFactor: Double
         get() = 9.0
 
-    private val baseSpeed: Double
+    val baseSpeed: Double
         get() = 12.0
 
     private fun getBaseSpeed(voltage: Double): Double = min(24.0, voltage * baseSpeed)
