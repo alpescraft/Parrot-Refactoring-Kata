@@ -42,7 +42,7 @@ class AfricanParrot(Parrot):
         return 9.0
 
 class NorwegianBlueParrot(Parrot):
-    def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
+    def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed = False):
         super().__init__(type_of_parrot, number_of_coconuts, voltage, nailed)
 
     def speed(self):
