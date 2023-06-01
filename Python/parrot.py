@@ -17,8 +17,6 @@ class Parrot:
 
     def speed(self):
         print("Computing speed...")
-        if self._type == ParrotType.AFRICAN:
-            return self.african_speed()
         if self._type == ParrotType.NORWEGIAN_BLUE:
             return self.norwegian_speed()
 
