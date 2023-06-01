@@ -2,6 +2,7 @@ package parrot;
 
 public abstract class GenericParrot {
 
+    public static final double BASE_SPEED = 12.0;
     protected int numberOfCoconuts;
     protected double voltage;
     protected boolean isNailed;
@@ -24,7 +25,7 @@ public abstract class GenericParrot {
     }
 
     protected double getBaseSpeed() {
-        return 12.0;
+        return BASE_SPEED;
     }
 
 }
