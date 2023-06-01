@@ -5,7 +5,7 @@ public class Parrot {
     private ParrotTypeEnum type;
     protected int numberOfCoconuts;
     protected double voltage;
-    private boolean isNailed;
+    protected boolean isNailed;
 
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = type;
