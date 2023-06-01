@@ -65,4 +65,8 @@ export class NorwegianBlueParrot extends Parrot {
                  isNailed: boolean) {
         super(ParrotTypes.NORWEGIAN_BLUE, numberOfCoconuts, voltage, isNailed);
     }
+
+    getSpeed(): number {
+        return super.getSpeed();
+    }
 }
