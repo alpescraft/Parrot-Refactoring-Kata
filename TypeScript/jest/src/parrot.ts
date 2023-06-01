@@ -36,10 +36,10 @@ export class AfricanParrot extends Parrot {
 }
 
 export class NorwegianBlueParrot extends Parrot {
-    constructor( numberOfCoconuts: number,
+    constructor(
                  voltage: number,
                  isNailed: boolean) {
-        super( numberOfCoconuts, voltage, isNailed);
+        super( 0, voltage, isNailed);
     }
 
     getSpeed(): number {
