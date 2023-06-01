@@ -42,8 +42,8 @@ class AfricanParrot(Parrot):
         return 9.0
 
 class NorwegianBlueParrot(Parrot):
-    def __init__(self, type_of_parrot, voltage, nailed = False):
-        super().__init__(type_of_parrot, 0, voltage, nailed)
+    def __init__(self, voltage, nailed = False):
+        super().__init__(ParrotType.NORWEGIAN_BLUE, 0, voltage, nailed)
 
     def speed(self):
         if self._nailed:
