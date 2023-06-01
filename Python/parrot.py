@@ -27,9 +27,6 @@ class Parrot:
     def _compute_base_speed_for_voltage(self, voltage):
         return min([24.0, voltage * self._base_speed()])
 
-    def _load_factor(self):
-        return 9.0
-
     def _base_speed(self):
         return 12.0
 
@@ -46,3 +43,6 @@ class AfricanParrot(Parrot):
 
     def speed(self):
         return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
+
+    def _load_factor(self):
+        return 9.0
