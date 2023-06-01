@@ -40,6 +40,10 @@ export class AfricanParrot extends Parrot {
     getSpeed(): number {
         return Math.max(0, this.getBaseSpeed() - this.getLoadFactor() * this.numberOfCoconuts);
     }
+
+    getLoadFactor(): number {
+        return 9;
+    }
 }
 
 export class NorwegianBlueParrot extends Parrot {
