@@ -1,4 +1,4 @@
-import {AfricanParrot, EuropeanParrot, Parrot, ParrotTypes} from '../src/parrot'
+import {AfricanParrot, EuropeanParrot, NorwegianBlueParrot, Parrot, ParrotTypes} from '../src/parrot'
 
 describe('Parrot', () => {
 
@@ -23,7 +23,7 @@ describe('Parrot', () => {
     });
 
     it('gets speed of Norwegian Blue Parrot nailed', () => {
-        const parrot = new Parrot(ParrotTypes.NORWEGIAN_BLUE, 0, 1.5, true);
+        const parrot = new NorwegianBlueParrot(ParrotTypes.NORWEGIAN_BLUE, 0, 1.5, true);
         expect(parrot.getSpeed()).toBe(0);
     });
 
