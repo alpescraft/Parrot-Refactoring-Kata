@@ -2,10 +2,10 @@
 
 namespace Parrot\Parrot;
 
-class EuropeanParrot implements ParrotInterface
+class EuropeanParrot extends BaseSpeed implements ParrotInterface
 {
     public function getSpeed(): float
     {
-        // TODO: Implement getSpeed() method.
+        return $this->getBaseSpeed();
     }
 }
