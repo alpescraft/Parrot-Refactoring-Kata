@@ -46,3 +46,7 @@ class AfricanParrot(Parrot):
 
     def _load_factor(self):
         return 9.0
+
+class NorwegianBlueParrot(Parrot):
+    def __init__(self, type_of_parrot, number_of_coconuts, voltage, nailed):
+        super().__init__(type_of_parrot, number_of_coconuts, voltage, nailed)
