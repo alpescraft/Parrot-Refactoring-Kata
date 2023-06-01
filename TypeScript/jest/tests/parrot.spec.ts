@@ -3,7 +3,7 @@ import {AfricanParrot, EuropeanParrot, NorwegianBlueParrot, Parrot, ParrotTypes}
 describe('Parrot', () => {
 
     it('gets speed of European Parrot', () => {
-        const parrot = new EuropeanParrot(ParrotTypes.EUROPEAN, 0, 0, false);
+        const parrot = new EuropeanParrot( 0, 0, false);
         expect(parrot.getSpeed()).toBe(12);
     });
 
