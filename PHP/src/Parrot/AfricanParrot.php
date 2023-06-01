@@ -9,4 +9,9 @@ class AfricanParrot implements ParrotInterface
     {
         // TODO: Implement getSpeed() method.
     }
+
+    private function getLoadFactor(): float
+    {
+        return 9.0;
+    }
 }
