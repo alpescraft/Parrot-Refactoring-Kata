@@ -1,6 +1,3 @@
-export enum ParrotTypes {
-}
-
 export class Parrot {
     constructor(
                 public numberOfCoconuts: number,
