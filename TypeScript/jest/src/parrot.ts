@@ -53,6 +53,10 @@ export class AfricanParrot extends Parrot {
                  isNailed: boolean) {
         super(ParrotTypes.AFRICAN, numberOfCoconuts, voltage, isNailed);
     }
+
+    getSpeed(): number {
+        return super.getSpeed();
+    }
 }
 
 export class NorwegianBlueParrot extends Parrot {
