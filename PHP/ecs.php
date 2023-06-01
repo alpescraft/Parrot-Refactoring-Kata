@@ -30,8 +30,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         SetList::CLEAN_CODE,
         SetList::STRICT,
         SetList::PSR_12,
-        SetList::PHP_70,
-        SetList::PHP_71,
         SetList::PHPUNIT,
     ]);
 };
