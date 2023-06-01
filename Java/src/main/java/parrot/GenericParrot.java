@@ -17,7 +17,7 @@ public abstract class GenericParrot {
 
     public abstract double getSpeed();
 
-    private double getBaseSpeed(double voltage) {
+    protected double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * getBaseSpeed());
     }
 
