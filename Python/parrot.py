@@ -27,8 +27,8 @@ class Parrot:
 
 class EuropeanParrot(Parrot):
 
-    def __init__(self, nailed):
-        super().__init__(ParrotType.EUROPEAN, nailed)
+    def __init__(self):
+        super().__init__(ParrotType.EUROPEAN, False)
 
     def speed(self):
         return super()._base_speed()

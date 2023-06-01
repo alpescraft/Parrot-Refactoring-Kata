@@ -2,7 +2,7 @@ from parrot import EuropeanParrot, AfricanParrot, NorwegianParrot
 
 
 def test_speedOfEuropeanParrot():
-    parrot = EuropeanParrot(False)
+    parrot = EuropeanParrot()
     assert parrot.speed() == 12.0
 
 
