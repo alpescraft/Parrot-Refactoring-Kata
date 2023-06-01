@@ -22,15 +22,15 @@ def test_speedOfAfricanParrot_With_No_Coconuts():
 
 
 def test_speedNorwegianBlueParrot_nailed():
-    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5, True)
+    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 1.5, True)
     assert parrot.speed() == 0.0
 
 
 def test_speedNorwegianBlueParrot_not_nailed():
-    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 0, 1.5)
+    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 1.5)
     assert parrot.speed() == 18.0
 
 
 def test_speedNorwegianBlueParrot_not_nailed_high_voltage():
-    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 0, 4)
+    parrot = NorwegianBlueParrot(ParrotType.NORWEGIAN_BLUE, 4)
     assert parrot.speed() == 24.0
