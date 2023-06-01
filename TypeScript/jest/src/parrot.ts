@@ -12,9 +12,8 @@ export class Parrot {
 }
 
 export class EuropeanParrot extends Parrot {
-    constructor(
-                 isNailed: boolean) {
-        super(0, 0, isNailed);
+    constructor() {
+        super(0, 0, false);
     }
 
     getSpeed() {
