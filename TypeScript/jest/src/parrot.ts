@@ -1,5 +1,4 @@
 export enum ParrotTypes {
-    AFRICAN,
     NORWEGIAN_BLUE,
 }
 
