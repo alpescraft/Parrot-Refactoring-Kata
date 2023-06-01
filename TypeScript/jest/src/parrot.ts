@@ -1,8 +1,7 @@
 export class Parrot {
     constructor(
                 public numberOfCoconuts: number,
-                public voltage: number,
-                public isNailed: boolean) {
+                public voltage: number) {
     }
 
     public getBaseSpeed(): number {
@@ -13,7 +12,7 @@ export class Parrot {
 
 export class EuropeanParrot extends Parrot {
     constructor() {
-        super(0, 0, false);
+        super(0, 0);
     }
 
     getSpeed() {
@@ -23,7 +22,7 @@ export class EuropeanParrot extends Parrot {
 
 export class AfricanParrot extends Parrot {
     constructor( numberOfCoconuts: number) {
-        super(numberOfCoconuts, 0, false);
+        super(numberOfCoconuts, 0);
     }
 
     getSpeed(): number {
@@ -38,8 +37,8 @@ export class AfricanParrot extends Parrot {
 export class NorwegianBlueParrot extends Parrot {
     constructor(
                  voltage: number,
-                 isNailed: boolean) {
-        super( 0, voltage, isNailed);
+                 public isNailed: boolean) {
+        super( 0, voltage);
     }
 
     getSpeed(): number {
