@@ -2,7 +2,7 @@ package parrot;
 
 public class EuropeanParrot extends GenericParrot {
     public EuropeanParrot(int numberOfCoconuts, double voltage, boolean isNailed) {
-        super(ParrotTypeEnum.EUROPEAN, numberOfCoconuts, voltage, isNailed);
+        super(numberOfCoconuts, voltage, isNailed);
     }
 
     @Override
