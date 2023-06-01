@@ -1,5 +1,6 @@
 package parrot;
 
+import com.sun.tools.javac.jvm.Gen;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -27,7 +28,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_No_Coconuts() {
-        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 0, 0, false);
+        GenericParrot parrot = new AfricanParrot(0, 0, false);
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
