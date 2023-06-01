@@ -40,6 +40,7 @@ class AfricanParrot(Parrot):
 
 class NorwegianBlueParrot(Parrot):
     def __init__(self, voltage, nailed = False):
+        self._nailed = nailed
         super().__init__(ParrotType.NORWEGIAN_BLUE, 0, voltage, nailed)
 
     def speed(self):
