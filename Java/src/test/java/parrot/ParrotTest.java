@@ -6,14 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class ParrotTest {
-
-    @Test
-    public void genericParrot(){
-        GenericParrot parrot = new GenericParrot(ParrotTypeEnum.AFRICAN, 1, 2, true);
-        Assert.assertNotNull(parrot);
-    }
-
-
+    
     @Test
     public void getSpeedOfEuropeanParrot() {
         Parrot parrot = new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0, false);
