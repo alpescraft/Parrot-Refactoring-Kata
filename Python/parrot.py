@@ -18,12 +18,15 @@ class Parrot:
     def european_speed(self):
             return self._base_speed()
 
+    def african_speed(self):
+            return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
+
     def speed(self):
         print("Computing speed...")
         if self._type == ParrotType.EUROPEAN:
             return self.european_speed()
         if self._type == ParrotType.AFRICAN:
-            return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
+            return self.african_speed()
         if self._type == ParrotType.NORWEGIAN_BLUE:
             if self._nailed:
                 return 0
