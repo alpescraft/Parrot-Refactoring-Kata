@@ -30,7 +30,7 @@ class EuropeanParrot(Parrot):
 
 class AfricanParrot(Parrot):
     def __init__(self, number_of_coconuts):
-        super().__init__(ParrotType.AFRICAN, number_of_coconuts, 0, False)
+        super().__init__(ParrotType.AFRICAN, number_of_coconuts, 0)
 
     def speed(self):
         return max(0, self._base_speed() - self._load_factor() * self._number_of_coconuts)
