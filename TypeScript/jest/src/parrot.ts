@@ -9,7 +9,7 @@ export class Parrot {
                 private numberOfCoconuts: number,
                 private voltage: number,
                 private isNailed: boolean) {
-    } //
+    }
 
     public getSpeed(): number {
         switch (this.parrotType) {
@@ -36,3 +36,5 @@ export class Parrot {
     }
 
 }
+
+export class EuropeanParrot extends Parrot {}
