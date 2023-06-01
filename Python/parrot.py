@@ -16,6 +16,7 @@ class Parrot:
         self._nailed = nailed
 
     def speed(self):
+        print("Computing speed...")
         if self._type == ParrotType.EUROPEAN:
             return self._base_speed()
         if self._type == ParrotType.AFRICAN:
