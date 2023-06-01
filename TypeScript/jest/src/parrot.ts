@@ -12,10 +12,6 @@ export class Parrot {
         return 12;
     }
 
-    public getLoadFactor(): number {
-        return 9;
-    }
-
 }
 
 export class EuropeanParrot extends Parrot {
