@@ -35,3 +35,8 @@ class TestParrotCase(unittest.TestCase):
     def test_speedNorwegianBlueParrot_not_nailed_high_voltage(self):
         parrot = NorwegianParrot(0, 4, False)
         assert parrot.speed() == 24.0
+
+    def test_parrot_raise(self):
+        parrot = Parrot(0, 4, False)
+        with self.assertRaises(ValueError) as ve:
+            parrot.speed()
