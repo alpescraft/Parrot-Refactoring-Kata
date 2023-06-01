@@ -1,7 +1,5 @@
 package parrot;
 
-import com.sun.tools.javac.jvm.Gen;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -10,7 +8,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfEuropeanParrot() {
-        Parrot parrot = new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0, false);
+        GenericParrot parrot = new EuropeanParrot( 0, 0, false);
         assertEquals(12.0, parrot.getSpeed(), 0.0);
     }
 
