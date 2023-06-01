@@ -8,10 +8,6 @@ export class Parrot {
                 public isNailed: boolean) {
     }
 
-    public getSpeed(): number {
-        throw new Error("Should be unreachable");
-    }
-
     public getBaseSpeed(): number {
         return 12;
     }
