@@ -16,12 +16,6 @@ class Parrot:
         self._nailed = nailed
 
     def speed(self):
-        if self._type == ParrotType.NORWEGIAN_BLUE:
-            if self._nailed:
-                return 0
-            else:
-                return self._compute_base_speed_for_voltage(self._voltage)
-
         raise ValueError("should be unreachable")
 
     def _compute_base_speed_for_voltage(self, voltage):
