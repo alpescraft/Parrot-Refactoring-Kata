@@ -11,7 +11,6 @@ class Parrot:
 
     def __init__(self, type_of_parrot, voltage, nailed):
         self._type = type_of_parrot
-        self._voltage = voltage
         self._nailed = nailed
 
     def speed(self):
