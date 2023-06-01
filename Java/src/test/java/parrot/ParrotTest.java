@@ -9,7 +9,7 @@ public class ParrotTest {
 
     @Test
     public void genericParrot(){
-        GenericParrot parrot = new GenericParrot();
+        GenericParrot parrot = new GenericParrot(ParrotTypeEnum.AFRICAN, 1, 2, true);
         Assert.assertNotNull(parrot);
     }
 
@@ -22,7 +22,7 @@ public class ParrotTest {
 
     @Test
     public void getSpeedOfAfricanParrot_With_One_Coconut() {
-        Parrot parrot = new Parrot(ParrotTypeEnum.AFRICAN, 1, 0, false);
+        GenericParrot parrot = new AfricanParrot(1, 0, false);
         assertEquals(3.0, parrot.getSpeed(), 0.0);
     }
 
