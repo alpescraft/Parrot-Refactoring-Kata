@@ -16,10 +16,6 @@ export class Parrot {
         return 9;
     }
 
-    public getBaseSpeedWithVoltage(voltage: number): number {
-        return Math.min(24, voltage * this.getBaseSpeed());
-    }
-
 }
 
 export class EuropeanParrot extends Parrot {
