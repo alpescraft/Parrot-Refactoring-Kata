@@ -2,7 +2,7 @@ package parrot
 
 import kotlin.math.min
 
-open class Parrot(
+abstract class Parrot(
     private val type: ParrotTypeEnum,
     val numberOfCoconuts: Int,
     val voltage: Double,
