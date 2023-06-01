@@ -12,10 +12,10 @@ export class Parrot {
 }
 
 export class EuropeanParrot extends Parrot {
-    constructor( numberOfCoconuts: number,
+    constructor(
                  voltage: number,
                  isNailed: boolean) {
-        super(numberOfCoconuts, voltage, isNailed);
+        super(0, voltage, isNailed);
     }
 
     getSpeed() {
