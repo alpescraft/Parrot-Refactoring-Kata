@@ -15,10 +15,7 @@ public class Parrot {
     }
 
     public double getSpeed() {
-        switch (type) {
-            default:
-                throw new RuntimeException("Should be unreachable");
-        }
+        throw new RuntimeException("Should be unreachable");
     }
 
     protected double getBaseSpeed(double voltage) {
