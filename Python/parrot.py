@@ -17,9 +17,6 @@ class Parrot:
 
     def speed(self):
         print("Computing speed...")
-        if self._type == ParrotType.NORWEGIAN_BLUE:
-            return self.norwegian_speed()
-
         raise ValueError("should be unreachable")
 
     def _compute_base_speed_for_voltage(self, voltage):
