@@ -1,5 +1,4 @@
 export enum ParrotTypes {
-    NORWEGIAN_BLUE,
 }
 
 export class Parrot {
